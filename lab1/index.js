@@ -2,7 +2,16 @@
 //Adnrii Doroshenko, IO-71
 //@whoiandrew 18.02.21
 
-import { srcArr, numberOfIntervals, gamma, t1, t2 } from "./data.js";
+import {  numberOfIntervals, gamma, t1, t2 } from "./data.js";
+
+const srcArr = [];
+
+//validation
+(() => {
+  if (!srcArr.length || (gamma > 1 || gamma < 0) || !numberOfIntervals){
+    return process.kill(process.pid);
+  } 
+})();
 
 Array.prototype.findAverage = function () {
   return this.reduce((acc, item) => acc + item) / this.length;

@@ -2,13 +2,13 @@
 //Adnrii Doroshenko, IO-71
 //@whoiandrew 18.02.21
 
-import {  numberOfIntervals, gamma, t1, t2 } from "./data.js";
+import {  srcArr, numberOfIntervals, gamma, t1, t2 } from "./data.js";
 
-const srcArr = [];
 
 //validation
 (() => {
   if (!srcArr.length || (gamma > 1 || gamma < 0) || !numberOfIntervals){
+    console.log("Invalid input data");
     return process.kill(process.pid);
   } 
 })();

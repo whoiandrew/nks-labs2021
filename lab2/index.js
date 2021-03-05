@@ -88,7 +88,7 @@ const findAllPaths = (g, queue) => {
       result.push(path);
     } else {
       const newPaths = nextNodes.map((item) => [...path, item]);
-      if (lastInRowNodes.includes(lastNode)) {
+      if (lastInRowNodes.includes(lastNode + 1)) {
         result.push(path);
       }
       queue.push(...newPaths);
@@ -174,5 +174,3 @@ const drawPath = (binPath) => {
   console.log(`\nNumber of possible paths: ${allBinaryPaths.length}`);
   console.log(`\nTotal probability: ${totalProbability}`);
 })();
-
-console.log();

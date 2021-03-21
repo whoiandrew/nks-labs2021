@@ -1,7 +1,7 @@
-//nks 2nd lw @whoiandrew
+//nks 3rd lw @whoiandrew
 //Doroshenko Andrii
 //IO-71
-//4.03.21
+//21.03.21
 
 "use strict";
 
